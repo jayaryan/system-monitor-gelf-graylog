@@ -1,0 +1,38 @@
+{
+  "name": "system-monitor-gelf-graylog",
+  "version": "1.0.0",
+  "description": "System monitor which sends health logs to Graylog server using GELF protocol. Can run as a daemon.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushal-likhi/system-monitor-gelf-graylog.git"
+  },
+  "keywords": [
+    "Graylog",
+    "Gelf",
+    "System",
+    "Monitor",
+    "Logger"
+  ],
+  "author": "Kushal Likhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kushal-likhi/system-monitor-gelf-graylog/issues"
+  },
+  "homepage": "https://github.com/kushal-likhi/system-monitor-gelf-graylog#readme",
+  "dependencies": {
+    "async": "^2.4.1",
+    "autostrip-json-comments": "0.0.4",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-preset-env": "^1.5.0",
+    "babel-register": "^6.24.1",
+    "cli-table": "^0.3.1",
+    "colors": "^1.1.2",
+    "extend": "^3.0.1",
+    "qrcode-terminal": "^0.10.0",
+    "traverse": "^0.6.6"
+  }
+}
