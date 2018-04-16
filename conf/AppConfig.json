@@ -13,15 +13,28 @@
    * */
   "common": {
 
+
     // Configure time to poll system health
+    "pollSeconds": 30,
 
 
+    // Gelf Connection
+    "graylogPort": "<?JS= process.env.GRAYLOG_PORT || 12201 :JS>",
+    "graylogHostname": "<?JS= process.env.GRAYLOG_HOSTNAME || 'localhost' :JS>",
+    "graylogProtocol": "<?JS= process.env.GRAYLOG_PROTOCOL || 'http' :JS>",
+
+
+    // Server Identifier
+    "host": "<?JS= process.env.HOST || 'dev-machine' :JS>",
+    "facility": "<?JS= process.env.FACILITY || 'server-node' :JS>",
 
 
     //Version of the app
     "appVersion": "1.0.0",
     //App Name
     "appName": "System Monitor GELF Graylog",
+
+
     //Configuration for logger
     "logger": {
       //Define log output format
