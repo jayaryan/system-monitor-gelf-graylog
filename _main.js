@@ -78,7 +78,7 @@ class Main {
                 if (item.search(/.js$/) !== -1) {
                     let name = item.toString().replace(/\.js$/, '');
                     console.log('[FRAMEWORK]'.bold.yellow, `Loading Service: '${name.bold}'`.magenta);
-                    services[name] = new (require(join(this.appBaseDir, 'services', name)).default);
+                    services[name] = new (require(join(this.appBaseDir, 'services', name)).default)();
                 }
             });
             this.addSafeReadOnlyGlobal('services', services);
