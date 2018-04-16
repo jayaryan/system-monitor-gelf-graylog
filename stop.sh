@@ -1,0 +1,1 @@
+kill $(ps aux | grep system_monitor_gg | awk '{print $2}') || true
