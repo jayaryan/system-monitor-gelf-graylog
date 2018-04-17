@@ -45,7 +45,6 @@ export default class GELFService {
             "line": line
         };
         Object.keys(params || {}).forEach(param => message[`_${param}`] = params[param]);
-        log.trace('Sending Log', message);
         request({
             method: 'post',
             url: `${_config.graylogProtocol}://${_config.graylogHostname}:${_config.graylogPort}/gelf`,
